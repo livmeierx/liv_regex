@@ -1,10 +1,13 @@
-# Title (replace with your title)
+# Liv's Regex Tutorial - Matching an Email
 
-Introductory paragraph (replace this with your text)
+This Regex (Regular Expression) tutorial contains detailed information to help a reader understand what a Regex is and how it functions. This tutorial breaks down the expressions into simple parts.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This tutorial breaks down the components of a Regex used to match Email Addresses. The Regex makes sure that a given string matches the template for an email address.
+
+Here is the expression:
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
@@ -23,6 +26,13 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+This regex contains two anchors - ^ and $
+
+^ refers to code that must appear at the beginning of a string
+
+$ refers to code that must appear at the end of a string
+
+Since this regex contains both of these anchors, strings must match every single specification exactly or it won't be a match.
 
 ### Quantifiers
 
