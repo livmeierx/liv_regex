@@ -13,19 +13,15 @@ Here is the expression:
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
 ### Anchors
+
 This regex contains two anchors -- ^ and $
 
 ^ refers to code that must appear at the beginning of a string
@@ -46,15 +42,11 @@ This regex contains two quanitifers -- + and {2,6}
 
 {2,6} specifies a match range of 2-6 characters for the character set of [a-z\.]
 
-### OR Operator
-
 ### Character Classes
 
 This regex contains one character class -- \d 
 
 This used to match any digit character; it matches a single character that is a digit from 0-9 and will only match a single digit such as 1 but not 11. A backslash is necessary to differentiate the digit class from the letter d.
-
-### Flags
 
 ### Grouping and Capturing
 
@@ -64,14 +56,23 @@ Anything within a set of parentheses is considered as a single group which means
 
 ### Bracket Expressions
 
+This regex contains three bracket expressions -- [a-z0-9_.-], [\da-z.-], and [a-z.]
+
+A bracket expression represents a single character and the character can be anything specified within the brackets. 
+
+[a-z0-9_.-] matches any letter a-z, a character 0-9, characters "_", "-", and "." It is also case senstive.
+
+[\da-z.-] matches a single digit from 0-9, any character a-z and the characters "." and "-"
+
+[a-z\.] matches any character a-z and the character "."
+
 ### Greedy and Lazy Match
 
-### Boundaries
+This regrex contains two greedy matches -- + and {} 
 
-### Back-references
-
-### Look-ahead and Look-behind
+The + quantifier will match as many times as possible, only giving back as needed. {} is used when trying to match {2,6} for the last capture group.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Liv Meier
+Github: https://github.com/livmeierx
