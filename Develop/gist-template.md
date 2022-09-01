@@ -48,12 +48,6 @@ This regex contains two quanitifers -- + and {2,6}
 
 ### OR Operator
 
-This regex contains two OR operators -- | and []
-
-
-
-
-
 ### Character Classes
 
 This regex contains one character class -- \d 
@@ -63,6 +57,10 @@ This used to match any digit character; it matches a single character that is a 
 ### Flags
 
 ### Grouping and Capturing
+
+In regex, grouping and capturing is done with parentheses -- ( )
+
+Anything within a set of parentheses is considered as a single group which means there are three capturing groups in this regex. ([a-z0-9_\.-]+) matches the user email name, ([\da-z\.-]+) matches the email service, and ([a-z\.]{2,6}) captueres the .com.
 
 ### Bracket Expressions
 
